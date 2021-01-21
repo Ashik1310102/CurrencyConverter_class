@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgimage2"
+    android:padding="20dp"
+    tools:context="com.example.ashik.currencyconverter.MainActivity">
+
+
+    <EditText
+        android:id="@+id/etEnterNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:hint="Enter Amount in BDT "
+        android:inputType="numberDecimal"
+        android:textStyle="italic"
+        android:background="#c6ffffff"
+        android:textAlignment="center"
+        android:layout_marginBottom="15dp"
+        android:textColor="#fd030000"
+
+        />
+
+    <Button
+        android:id="@+id/btConvert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:textSize="30sp"
+        android:layout_margin="20dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="#d6253291"
+        android:textColor="#ffffff"
+        android:layout_below="@id/etEnterNumber"
+        android:layout_centerHorizontal="true"
+        android:onClick="converter"/>
+    <TextView
+        android:id="@+id/tvDollar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Doller  : "
+        android:textSize="30sp"
+        android:textColor="#fff"
+        android:paddingLeft="10dp"
+
+        android:textAlignment="center"
+        android:background="#d6253291"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/btConvert"/>
+    <TextView
+        android:id="@+id/tvDollarP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        android:textSize="30sp"
+        android:background="#fff"
+        android:textAlignment="center"
+        android:textColor="#071ee9"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="15dp"
+        android:layout_toRightOf="@+id/tvDollar"
+        android:layout_below="@+id/btConvert"/>
+    <TextView
+        android:id="@+id/tvPound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pound : "
+        android:textSize="30sp"
+        android:paddingLeft="10dp"
+        android:textColor="#fff"
+        android:textAlignment="center"
+        android:background="#d6253291"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/tvDollar"/>
+    <TextView
+        android:id="@+id/tvPoundP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        android:textSize="30sp"
+        android:background="#fff"
+        android:textAlignment="center"
+        android:textColor="#071ee9"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="15dp"
+        android:layout_toRightOf="@+id/tvPound"
+        android:layout_below="@+id/tvDollarP"/>
+    <TextView
+        android:id="@+id/tvEuro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EURO : "
+        android:textColor="#fff"
+        android:textAlignment="center"
+        android:paddingLeft="20dp"
+        android:background="#d6253291"
+        android:textSize="30sp"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/tvPound"/>
+    <TextView
+        android:id="@+id/tvEuroP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        android:textSize="30sp"
+
+        android:layout_marginLeft="5dp"
+        android:background="#fff"
+        android:textAlignment="center"
+        android:textColor="#071ee9"
+        android:layout_marginBottom="15dp"
+        android:layout_toRightOf="@+id/tvEuro"
+        android:layout_below="@+id/tvPoundP"/>
+    <TextView
+        android:id="@+id/tvRial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rial : "
+        android:textColor="#fff"
+        android:textAlignment="center"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:background="#d6253291"
+        android:textSize="30sp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/tvEuro"/>
+    <TextView
+        android:id="@+id/tvRialP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        android:textSize="30sp"
+        android:background="#fff"
+        android:textAlignment="center"
+        android:textColor="#071ee9"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="15dp"
+        android:layout_toRightOf="@+id/tvRial"
+        android:layout_below="@+id/tvEuroP"/>
+
+</RelativeLayout>
